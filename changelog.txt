@@ -1,0 +1,5 @@
+v1.1
+-----------------------
+min-width/height on html/body
+box-sizing setting
+added border color styles

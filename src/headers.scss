@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6 {
+  @include block;
+  font-weight: 500;
+
+  &::before, &::after {
+    @include anonymous;
+    
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: color(pearl);
+  }
+
+  &::before {
+    content: "{";
+  }
+
+  &::after {
+    content: "}";
+  }
+
+  &.subtitle {
+    margin-top: -15px;
+    color: color(smoke);
+
+    &::before, &::after {
+      content: "";
+    }
+  }
+}
+
+$h-sizes: (2, 1.6, 1.4, 1.2, 1.1, 1);
+
+@for $i from 1 through length($h-sizes) {
+  $size: nth($h-sizes, $i);
+
+  h#{$i} {
+    font-size: #{$size}em;
+  
+    &.subtitle {
+      font-size: #{$size * 0.75}em;
+    }
+  }
+}

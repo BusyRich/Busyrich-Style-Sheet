@@ -1,0 +1,16 @@
+$colors: (
+  pearl: #EAEAEA,
+  smoke: #ABABAB,
+  radical: #F92672,
+  matrix: #89C11A,
+  royal: #824DE6,
+  mermaid: #52CBE0,
+  oj: #F2870D,
+  sand: #e7db75,
+  darkelf: #1F1F1A,
+  abyss: #141411
+);
+
+@function color($c) {
+  @return map-get($colors, '#{$c}');
+}

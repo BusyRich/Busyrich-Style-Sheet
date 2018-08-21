@@ -1,0 +1,62 @@
+// Variables and Helpers
+@import 'colors';
+@import 'mixins';
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,900|Anonymous+Pro:400,700');
+@import 'reset';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  color: color(pearl);
+  font-family: 'Source Code Pro', monospace, Arial;
+  background: color(abyss);
+}
+
+@import 'grids';
+@import 'headers';
+
+section, p {
+  @include block;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  color: color(smoke);
+  text-decoration: none;
+  transition: color 0.5s;
+
+  &:hover {
+    color: color(pearl);
+  }
+}
+
+.tx-anon {
+  @include anonymous;
+}
+
+@each $color-name, $color in $colors {
+  .tx-#{$color-name} {
+    color: $color;
+  }
+
+  .bg-#{$color-name} {
+    background-color: $color;
+  }
+
+  .bo-#{$color-name} {
+    border-color: $color;
+  }
+}
+
+

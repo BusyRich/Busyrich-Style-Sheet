@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,900|Anonymous+Pro:400,700");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 display-role rest for IE 9-11 */
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  color: #EAEAEA;
+  font-family: 'Source Code Pro', monospace, Arial;
+  background: #141411;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.cols {
+  display: flex;
+  flex-direction: row;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+h1::before, h1::after, h2::before, h2::after, h3::before, h3::after, h4::before, h4::after, h5::before, h5::after, h6::before, h6::after {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #EAEAEA;
+}
+
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+  content: "{";
+}
+
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+  content: "}";
+}
+
+h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle {
+  margin-top: -15px;
+  color: #ABABAB;
+}
+
+h1.subtitle::before, h1.subtitle::after, h2.subtitle::before, h2.subtitle::after, h3.subtitle::before, h3.subtitle::after, h4.subtitle::before, h4.subtitle::after, h5.subtitle::before, h5.subtitle::after, h6.subtitle::before, h6.subtitle::after {
+  content: "";
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1.subtitle {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h2.subtitle {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h3.subtitle {
+  font-size: 1.05em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h4.subtitle {
+  font-size: 0.9em;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+h5.subtitle {
+  font-size: 0.825em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+h6.subtitle {
+  font-size: 0.75em;
+}
+
+section, p {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  color: #ABABAB;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #EAEAEA;
+}
+
+.tx-anon {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1.1em;
+}
+
+.tx-pearl {
+  color: #EAEAEA;
+}
+
+.bg-pearl {
+  background-color: #EAEAEA;
+}
+
+.bo-pearl {
+  border-color: #EAEAEA;
+}
+
+.tx-smoke {
+  color: #ABABAB;
+}
+
+.bg-smoke {
+  background-color: #ABABAB;
+}
+
+.bo-smoke {
+  border-color: #ABABAB;
+}
+
+.tx-radical {
+  color: #F92672;
+}
+
+.bg-radical {
+  background-color: #F92672;
+}
+
+.bo-radical {
+  border-color: #F92672;
+}
+
+.tx-matrix {
+  color: #89C11A;
+}
+
+.bg-matrix {
+  background-color: #89C11A;
+}
+
+.bo-matrix {
+  border-color: #89C11A;
+}
+
+.tx-royal {
+  color: #824DE6;
+}
+
+.bg-royal {
+  background-color: #824DE6;
+}
+
+.bo-royal {
+  border-color: #824DE6;
+}
+
+.tx-mermaid {
+  color: #52CBE0;
+}
+
+.bg-mermaid {
+  background-color: #52CBE0;
+}
+
+.bo-mermaid {
+  border-color: #52CBE0;
+}
+
+.tx-oj {
+  color: #F2870D;
+}
+
+.bg-oj {
+  background-color: #F2870D;
+}
+
+.bo-oj {
+  border-color: #F2870D;
+}
+
+.tx-sand {
+  color: #e7db75;
+}
+
+.bg-sand {
+  background-color: #e7db75;
+}
+
+.bo-sand {
+  border-color: #e7db75;
+}
+
+.tx-darkelf {
+  color: #1F1F1A;
+}
+
+.bg-darkelf {
+  background-color: #1F1F1A;
+}
+
+.bo-darkelf {
+  border-color: #1F1F1A;
+}
+
+.tx-abyss {
+  color: #141411;
+}
+
+.bg-abyss {
+  background-color: #141411;
+}
+
+.bo-abyss {
+  border-color: #141411;
+}
